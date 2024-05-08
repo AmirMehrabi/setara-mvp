@@ -57,7 +57,7 @@ class LoginToken extends Model
             $message = $url;
             $receptor = $this->user->phone;
             // $result = Kavenegar::Send($sender, $receptor, $message);
-            $result = Kavenegar::VerifyLookup($receptor, $message, null, null, 'verify');
+            $result = Kavenegar::VerifyLookup($receptor, $message, null, null, 'setara-auth');
         } catch (\Kavenegar\Exceptions\ApiException $e) {
             // در صورتی که خروجی وب سرویس 200 نباشد این خطا رخ می دهد
             // echo $e->errorMessage();
