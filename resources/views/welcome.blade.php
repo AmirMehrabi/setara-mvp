@@ -52,13 +52,13 @@
             </div>
         </div>
 
-        <div class="mt-12 bg-purple-300 md:mt-0  flex flex-col gap-3 items-start p-10 md:p-20"
+        <div class="mt-12 bg-purple-300 md:mt-0  flex flex-col lg:flex-row gap-3 items-start p-10 md:p-20"
             id="live-preview">
 
             @foreach (\App\Models\Stylist::take(3)->get() as $item)
                 
             <div
-            class="drop-shadow-md p-2 sm:p-4 lg:p-5 relative h-100 flex col-span-2 flex-col rounded-xl h-full w-full md:w-5/6 lg:w-2/5 items-center bg-white bg-clip-border text-gray-700 shadow-lg">
+            class="drop-shadow-md p-2 sm:p-4 lg:p-5 relative h-100 flex col-span-2 flex-col rounded-xl h-full w-full md:w-5/6 lg:w-2/5 xl:w-1/3 items-center bg-white bg-clip-border text-gray-700 shadow-lg">
 
             <div class="flex flex-col lg:flex-row items-center justify-between h-full">
 
