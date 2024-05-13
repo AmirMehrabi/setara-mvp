@@ -67,6 +67,8 @@
                         class="w-full object-cover rounded-full lg:rounded mb-2 lg:mb-0 aspect-square" alt="">
                 </div>
 
+
+                
                 <div class="w-full lg:w-2/3 lg:pr-2 flex flex-col place-content-around h-full">
                     <div>
                         <h5
