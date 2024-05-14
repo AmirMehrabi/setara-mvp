@@ -9,6 +9,9 @@ Route::get('/', function () {
 });
 
 
+Route::get('about', [PagesController::class, 'about'])->name('about');
+
+
 
 
 Route::get('/profile', [PagesController::class, 'profile'])->middleware('auth');

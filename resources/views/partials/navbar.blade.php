@@ -19,7 +19,7 @@
                 class=" bg-purple-300 text-gray-800 hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">خروج</a>
         @else
             <a href="/login"
-                class=" bg-purple-300 text-gray-800 hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">ورود</a>
+                class=" bg-purple-300 text-gray-800 hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">ورود / ثبت‌نام</a>
         @endif
         {{-- <a href="#live-preview"
             class=" bg-purple-300 text-gray-800 hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0   ">پیش‌نمایش</a> --}}
@@ -44,9 +44,10 @@
                     aria-current="page">خانه</a>
             </li>
             <li class="">
-                <a href="#"
-                    class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-700 md:p-0     md::border-gray-700">امنیت
-                    و حریم شخصی</a>
+                <a href="{{ route('about') }}"
+                    class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-700 md:p-0     md::border-gray-700">
+                    دربارهٔ ما    
+                </a>
             </li>
             <li class="">
                 <a href="#"
