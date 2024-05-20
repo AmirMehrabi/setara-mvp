@@ -2,6 +2,7 @@
 export default {
   content: [
     './resources/views/**/*.blade.php',
+    './resources/views/**/**/*.blade.php',
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
     "./resources/**/*.vue",
@@ -14,6 +15,8 @@ export default {
       },
   },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }
 

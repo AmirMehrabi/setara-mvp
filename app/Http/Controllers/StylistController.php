@@ -12,7 +12,8 @@ class StylistController extends Controller
      */
     public function index()
     {
-        //
+        $stylist = Stylist::all();
+        return view('modules.stylist.index', compact('stylist'));
     }
 
     /**
@@ -36,7 +37,7 @@ class StylistController extends Controller
      */
     public function show(Stylist $stylist)
     {
-        //
+        return view('modules.stylist.show', compact('stylist'));
     }
 
     /**

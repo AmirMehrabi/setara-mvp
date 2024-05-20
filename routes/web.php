@@ -3,10 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\StylistController;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('home');
 
 
 Route::get('about', [PagesController::class, 'about'])->name('about');
@@ -30,3 +31,6 @@ Route::get('/auth/token/{token}', [LoginController::class, 'authenticate']);
 Route::get('logout', [LoginController::class, 'logout'])->name('logout');
 
 Route::post('/auth/token/', [LoginController::class, 'postAuthenticate'])->name('postAuthenticate');
+
+
+Route::resource('stylists', StylistController::class);

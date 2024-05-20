@@ -39,9 +39,16 @@
         <ul
             class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:gap-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white  md: ">
             <li class="">
-                <a href="#"
+                <a href="{{ route('home') }}"
                     class="block py-2 pl-3 pr-4 text-white bg-gray-700 rounded md:bg-transparent md:text-gray-700 md:p-0 "
                     aria-current="page">خانه</a>
+            </li>
+
+            <li class="">
+                <a href="{{ route('stylists.index') }}"
+                    class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-gray-700 md:p-0     md::border-gray-700">
+                    استایلیست‌ها
+                </a>
             </li>
             <li class="">
                 <a href="{{ route('about') }}"
