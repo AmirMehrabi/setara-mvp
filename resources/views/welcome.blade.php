@@ -23,7 +23,7 @@
         <nav class="bg-white px-2 sm:px-4 py-2.5 w-full  fixed z-20 top-0 left-0 border-gray-200 ">
             @include('partials.navbar')
         </nav>
-        <div class="mt-12 md:mt-0 mx-auto flex  sm:items-center py-4 sm:pt-0  min-h-screen bg-orange-50">
+        <div class="mt-24 mx-auto flex  sm:items-center py-4 sm:pt-0  min-h-screen bg-orange-50">
 
             <div class="   overflow-hidden  max-w-6xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 items-center">
