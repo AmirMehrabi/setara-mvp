@@ -20,7 +20,7 @@
 <body class="antialiased font-serif">
     <div id="app">
 
-        <nav class="bg-white px-2 sm:px-4 py-2.5 w-full  fixed z-20 top-0 left-0 border-gray-200 ">
+        <nav class="bg-teal-800 px-2 sm:px-4 py-2.5 w-full  z-20 top-0 left-0 border-gray-200 ">
             @include('partials.navbar')
         </nav>
         <div class="mt-12 md:mt-0 mx-auto flex  sm:items-center py-4 sm:pt-0  min-h-screen bg-orange-50">
@@ -31,12 +31,12 @@
                         <div class="">
                             <div class=" text-gray-600  text-sm gap-2 flex flex-col text-center">
                                 <div class="shrink">
-                                    <div class="font-bold text-4xl text-black leading-relaxed bg-purple-300 rounded p-3">
+                                    <div class="font-bold text-4xl text-black leading-relaxed bg-orange-300 rounded p-3">
                                         ستارا
                                     </div>
                                 </div>
                                 <div>
-                                    <h4 class="font-bold text-2xl text-gray-900 leading-relaxed bg-purple-200 rounded p-3">استایلیست شخصی شما در یک قدمی شما</h4>
+                                    <h4 class="font-bold text-2xl text-gray-900 leading-relaxed bg-orange-200 rounded p-3">استایلیست شخصی شما در یک قدمی شما</h4>
 
                                 </div>
 

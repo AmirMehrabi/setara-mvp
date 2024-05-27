@@ -20,7 +20,7 @@
 <body class="antialiased font-serif">
     <div id="app">
 
-        <nav class="bg-white px-2 sm:px-4 py-2.5 w-full  fixed z-20 top-0 left-0 border-gray-200 ">
+        <nav class="bg-teal-800 px-2 sm:px-4 py-2.5 w-full  z-20 top-0 left-0 border-gray-200 ">
             @include('partials.navbar')
         </nav>
 

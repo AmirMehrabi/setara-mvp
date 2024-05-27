@@ -20,8 +20,8 @@
 <body class="antialiased font-serif">
     <div id="app">
 
-        <nav class="bg-white px-2 sm:px-4 py-2.5 w-full  z-20 top-0 left-0 border-gray-200">
-            @include('partials.navbar')
+      <nav class="bg-teal-800 px-2 sm:px-4 py-2.5 w-full  z-20 top-0 left-0 border-gray-200 ">
+        @include('partials.navbar')
         </nav>
 
         <div class="mt-12 md:mt-0 mx-auto flex flex-col  sm:items-center py-4 sm:pt-0  bg-orange-50">
