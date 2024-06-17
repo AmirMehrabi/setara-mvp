@@ -4,6 +4,8 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\StylistController;
+use App\Http\Controllers\Auth\StylistAuthController;
+use App\Http\Controllers\StylistDashboardController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -12,7 +14,8 @@ Route::get('/', function () {
 
 Route::get('about', [PagesController::class, 'about'])->name('about');
 
-
+Route::get('/stylists/{stylist}', [StylistController::class, 'show'])->name('stylists.show');
+Route::post('/stylists/{stylist}/reserve', [StylistController::class, 'reserve'])->name('stylists.reserve')->middleware('auth');
 
 
 Route::get('/profile', [PagesController::class, 'profile'])->middleware('auth');
@@ -34,3 +37,21 @@ Route::post('/auth/token/', [LoginController::class, 'postAuthenticate'])->name(
 
 
 Route::resource('stylists', StylistController::class);
+
+
+
+// Stylists Authentication
+
+Route::get('stylist/login', [StylistAuthController::class, 'showLoginForm'])->name('stylist.login');
+Route::post('stylist/login', [StylistAuthController::class, 'login']);
+Route::post('stylist/logout', [StylistAuthController::class, 'logout'])->name('stylist.logout');
+
+// Route::get('stylist/register', [StylistAuthController::class, 'showRegistrationForm'])->name('stylist.register');
+// Route::post('stylist/register', [StylistAuthController::class, 'register']);
+
+
+
+// Stylist Dashboard
+// Route::group(function () {
+    Route::get('/stylist/dashboard', [StylistDashboardController::class, 'index'])->name('stylist.dashboard');
+    Route::post('/stylist/dashboard', [StylistDashboardController::class, 'storeAvailableTimeSlots'])->name('stylist.storeAvailableTimeSlots');

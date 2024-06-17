@@ -64,7 +64,7 @@
 
                 <div class="w-1/3">
                     <img src="{{ asset($item->avatar) }}"
-                        class="w-full object-cover rounded-full lg:rounded mb-2 lg:mb-0 aspect-square" alt="">
+                        class="w-full object-cover  rounded-full lg:rounded mb-2 lg:mb-0 aspect-square" alt="">
                 </div>
 
 
