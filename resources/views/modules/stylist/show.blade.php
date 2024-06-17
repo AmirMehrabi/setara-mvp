@@ -105,31 +105,6 @@
 
                                         <hr>
 
-                                        <div class="bg-white p-6 rounded shadow-md">
-                                            <h2 class="text-2xl font-bold mb-4">زمان‌های آزاد</h2>
-                                            @if($availableTimeSlots->isEmpty())
-                                                <p>در حال حاضر زمان آزادی وجود ندارد.</p>
-                                            @else
-                                                <ul class="space-y-4">
-                                                    @foreach($availableTimeSlots as $slot)
-                                                        <li class="bg-gray-100 p-4 rounded shadow flex justify-between items-center">
-                                                            <div>
-                                                                <span>از <span class="font-bold">{{ jdate($slot->start_time) }}</span> تا <span class="font-bold">{{ jdate($slot->end_time) }}</span> </span>
-                                                            </div>
-                                                            @auth
-                                                                <form method="POST" action="{{ route('stylists.reserve', $stylist) }}">
-                                                                    @csrf
-                                                                    <input type="hidden" name="time_slot_id" value="{{ $slot->id }}">
-                                                                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">رزرو</button>
-                                                                </form>
-                                                            @else
-                                                                <span class="text-gray-500">برای رزرو وارد شوید</span>
-                                                            @endauth
-                                                        </li>
-                                                    @endforeach
-                                                </ul>
-                                            @endif
-                                        </div>
                     
                                         <h3 class="font-semibold text-center mt-3 -mb-2">
                                             من در شبکه‌های اجتماعی
@@ -177,8 +152,6 @@
                                             </a>
                                         </div>
                     
-                    
-                                        <h2 class="text-xl font-bold mt-6 mb-4">رزرو وقت</h2>
                                         {{-- <div class="mb-6">
                                             <div class="flex justify-between flex-wrap gap-2 w-full">
                                                 <span class="text-gray-700 font-bold">Web Developer</span>
@@ -221,6 +194,37 @@
                                                 suscipit.
                                             </p>
                                         </div> --}}
+                                    </div>
+
+                                    <div class="bg-white shadow rounded-lg p-6 mt-6">
+
+                    
+                                        <h2 class="text-xl font-bold mt-6 mb-4">رزرو وقت</h2>
+
+
+                                            @if($availableTimeSlots->isEmpty())
+                                                <p>در حال حاضر زمان آزادی وجود ندارد.</p>
+                                            @else
+                                                <ul class="space-y-4">
+                                                    @foreach($availableTimeSlots as $slot)
+                                                        <li class="bg-gray-100 p-4 rounded shadow flex justify-between items-center">
+                                                            <div>
+                                                                <span>از <span class="font-bold">{{ jdate($slot->start_time) }}</span> تا <span class="font-bold">{{ jdate($slot->end_time) }}</span> </span>
+                                                            </div>
+                                                            @auth
+                                                                <form method="POST" action="{{ route('stylists.reserve', $stylist) }}">
+                                                                    @csrf
+                                                                    <input type="hidden" name="time_slot_id" value="{{ $slot->id }}">
+                                                                    <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded">رزرو</button>
+                                                                </form>
+                                                            @else
+                                                                <span class="text-gray-500">برای رزرو وارد شوید</span>
+                                                            @endauth
+                                                        </li>
+                                                    @endforeach
+                                                </ul>
+                                            @endif
+                                        
                                     </div>
                                 </div>
                             </div>
