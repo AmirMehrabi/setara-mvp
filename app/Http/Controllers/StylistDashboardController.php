@@ -60,6 +60,6 @@ class StylistDashboardController extends Controller
             ]);
         }
 
-        return redirect()->back()->with('success', 'Time slots added successfully.');
+        return redirect()->back()->with('success', 'زمان آزاد با موفقیت افزوده شد');
     }
 }
