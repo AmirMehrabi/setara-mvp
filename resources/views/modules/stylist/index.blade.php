@@ -176,7 +176,7 @@
 
 
         <footer class="max-w-6xl rounded-lg  mx-auto">
-
+          <a referrerpolicy='origin' target='_blank' href='https://trustseal.enamad.ir/?id=503258&Code=Gvq5iQImAiOnptObkKwSsXi5Khl5x5pA'><img referrerpolicy='origin' src='https://trustseal.enamad.ir/logo.aspx?id=503258&Code=Gvq5iQImAiOnptObkKwSsXi5Khl5x5pA' alt='' style='cursor:pointer' code='Gvq5iQImAiOnptObkKwSsXi5Khl5x5pA'></a>
 
             <div
                 class=" w-full mx-auto border-gray-300  border-t px-2 py-4 md:py-6 md:flex md:items-center md:justify-between ">
