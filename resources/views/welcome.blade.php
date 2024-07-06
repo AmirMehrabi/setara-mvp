@@ -20,6 +20,7 @@
 <body class="antialiased font-serif">
     <div id="app">
 
+        
         <nav class="bg-teal-800 px-2 sm:px-4 py-2.5 w-full  z-20 top-0 left-0 border-gray-200 ">
             @include('partials.navbar')
         </nav>
@@ -28,11 +29,13 @@
             <div class="   overflow-hidden  max-w-6xl mx-auto">
                 <div class="grid grid-cols-1 md:grid-cols-2 items-center">
                     <div class="p-6">
-                        <div class="">
-                            <div class=" text-gray-600  text-sm">
-                                <h2 class="font-bold text-4xl text-black leading-relaxed bg-orange-300 rounded p-3">
+                        <div class=" text-center lg:text-right">
+                            <div class=" text-gray-600">
+                                <h2 class="font-bold text-2xl lg:text-4xl text-black leading-relaxed bg-orange-300 rounded p-3">
                                     استایلیست شخصی شما، در همین نزدیکی‌ها
                                 </h2>
+
+                                <h5 class="text-lg mt-5 text-black leading-relaxed bg-orange-100 rounded p-3"> به دنبال مشاوره مد هستید؟ به دنبال یک لباس ایده‌آل یا یک کمد لباس کامل؟ ما اینجاهستیم که به شما کمک کنیم تا ظاهری زیبا و احساسی فوق‌العاده داشته باشید.</h5>
 
                             </div>
                         </div>

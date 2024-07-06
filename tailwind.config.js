@@ -5,6 +5,7 @@ export default {
     './resources/views/**/**/*.blade.php',
     "./resources/**/*.blade.php",
     "./resources/**/*.js",
+    "./node_modules/flowbite/**/*.js",
     "./resources/**/*.vue",
   ],
   theme: {
@@ -16,7 +17,8 @@ export default {
   },
   },
   plugins: [
-    require('@tailwindcss/forms')
+    require('@tailwindcss/forms'),
+    require('flowbite/plugin')
   ],
 }
 
