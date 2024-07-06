@@ -46,24 +46,24 @@
 
             <li class="">
                 <a href="{{ route('stylists.index') }}"
-                    class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0     md::border-gray-700">
+                    class="block py-2 pl-3 pr-4 text-white rounded md:p-0     md::border-gray-700">
                     استایلیست‌ها
                 </a>
             </li>
             <li class="">
                 <a href="{{ route('about') }}"
-                    class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0     md::border-gray-700">
+                    class="block py-2 pl-3 pr-4 text-white rounded md:p-0     md::border-gray-700">
                     دربارهٔ ما    
                 </a>
             </li>
             <li class="">
                 <a href="#"
-                    class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0     md::border-gray-700">تیم
+                    class="block py-2 pl-3 pr-4 text-white rounded md:p-0     md::border-gray-700">تیم
                     ما</a>
             </li>
             <li class="">
                 <a href="#"
-                    class="block py-2 pl-3 pr-4 text-white rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white md:p-0     md::border-gray-700">قیمت‌گذاری</a>
+                    class="block py-2 pl-3 pr-4 text-white rounded md:p-0     md::border-gray-700">قیمت‌گذاری</a>
             </li>
         </ul>
     </div>
