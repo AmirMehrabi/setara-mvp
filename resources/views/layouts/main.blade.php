@@ -5,7 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ستارا - خانه</title>
+    <title> {{ config('app.name') }} - @yield('title') </title>
+
 
     <!-- Fonts -->
     {{-- <link rel="preconnect" href="https://fonts.bunny.net"> --}}
@@ -14,13 +15,24 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     <link rel="stylesheet" href="{{ asset('assets/css/main.css') }}">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/datepicker.min.js"></script>
-
+<script>
+    !function (t, e, n) {
+        t.yektanetAnalyticsObject = n, t[n] = t[n] || function () {
+            t[n].q.push(arguments)
+        }, t[n].q = t[n].q || [];
+        var a = new Date, r = a.getFullYear().toString() + "0" + a.getMonth() + "0" + a.getDate() + "0" + a.getHours(),
+            c = e.getElementsByTagName("script")[0], s = e.createElement("script");
+        s.id = "ua-script-7M86aDU6"; s.dataset.analyticsobject = n;
+        s.async = 1; s.type = "text/javascript";
+        s.src = "https://cdn.yektanet.com/rg_woebegone/scripts_v3/7M86aDU6/rg.complete.js?v=" + r, c.parentNode.insertBefore(s, c)
+    }(window, document, "yektanet");
+</script>
 </head>
 
 <body class="antialiased font-serif">
     <div id="app">
 
-        <nav class="bg-teal-800 px-2 sm:px-4 py-2.5 w-full  z-20 top-0 left-0 border-gray-200 ">
+        <nav class="bg-sunglow-300 px-2 sm:px-4 py-2.5 w-full  z-20 top-0 left-0 border-gray-200 ">
             @include('partials.navbar')
         </nav>
 
@@ -45,7 +57,7 @@
 
                 <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500  sm:mt-0">
                     <li>
-                        contact@setara.style
+                        info@setara.style
                         {{-- <a href="#" class="mr-4 hover:underline md:ml-6 ">About</a> --}}
                     </li>
                     {{-- <li>
