@@ -10,6 +10,12 @@ use Illuminate\Support\Facades\Hash;
 
 class StylistAuthController extends Controller
 {
+
+    public function __construct()
+    {
+        // $this->middleware('guest')->except('logout');
+        // $this->middleware('guest:stylist')->except('logout');
+    }
     public function showLoginForm()
     {
         return view('auth.stylists.login');

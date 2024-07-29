@@ -60,7 +60,16 @@
                 <ul class="list-disc pl-5">
                     @foreach($availableTimeSlots as $slot)
                         <li class="mb-2">
-                            <span>از <span class="font-bold">{{ jdate($slot->start_time) }}</span> تا <span class="font-bold">{{ jdate($slot->end_time) }}</span> </span>
+                            <div>
+                                <span
+                                    class="font-bold">{{ jdate($slot->start_time)->format('%A، %d %B') }}</span>
+                                <span>از <span
+                                        class="font-bold">{{ jdate($slot->start_time)->format('H:m') }}</span>
+                                    تا <span
+                                        class="font-bold">{{ jdate($slot->end_time)->format('H:m') }}</span>
+                                </span>
+                            </div>
+                            {{-- <span>از <span class="font-bold">{{ jdate($slot->start_time) }}</span> تا <span class="font-bold">{{ jdate($slot->end_time) }}</span> </span> --}}
                         </li>
                     @endforeach
                 </ul>

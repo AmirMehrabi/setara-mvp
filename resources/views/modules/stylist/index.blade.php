@@ -9,7 +9,6 @@
 
 
   <div class="   overflow-hidden  max-w-6xl mx-auto">
-
       <nav class="flex items-start ml-auto my-10 text-xl" aria-label="Breadcrumb">
           <ol class="inline-flex space-x-1 md:space-x-2 rtl:space-x-reverse">
             <li class="inline-flex items-center">

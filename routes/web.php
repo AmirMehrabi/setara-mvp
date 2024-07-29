@@ -42,9 +42,6 @@ Route::resource('stylists', StylistController::class);
 
 // Stylists Authentication
 
-Route::get('stylist/login', [StylistAuthController::class, 'showLoginForm'])->name('stylist.login');
-Route::post('stylist/login', [StylistAuthController::class, 'login']);
-Route::post('stylist/logout', [StylistAuthController::class, 'logout'])->name('stylist.logout');
 
 // Route::get('stylist/register', [StylistAuthController::class, 'showRegistrationForm'])->name('stylist.register');
 // Route::post('stylist/register', [StylistAuthController::class, 'register']);
@@ -53,5 +50,14 @@ Route::post('stylist/logout', [StylistAuthController::class, 'logout'])->name('s
 
 // Stylist Dashboard
 // Route::group(function () {
+
+    Route::group(['middleware' => 'guest:stylist'], function() {
+        Route::get('stylist/login', [StylistAuthController::class, 'showLoginForm'])->name('stylist.login');
+        Route::post('stylist/login', [StylistAuthController::class, 'login']);
+
+    });
+    Route::post('stylist/logout', [StylistAuthController::class, 'logout'])->name('stylist.logout');
+
+
     Route::get('/stylist/dashboard', [StylistDashboardController::class, 'index'])->name('stylist.dashboard');
     Route::post('/stylist/dashboard', [StylistDashboardController::class, 'storeAvailableTimeSlots'])->name('stylist.storeAvailableTimeSlots');
