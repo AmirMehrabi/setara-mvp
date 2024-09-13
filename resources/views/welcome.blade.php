@@ -82,8 +82,66 @@
             </div>
         </div>
     </div> --}}
-    <div class="mt-12 bg-white md:mt-0  flex flex-col items-stretch lg:flex-row gap-5  p-10 md:p-20" id="live-preview">
+    <div class="mt-12 bg-white md:mt-0   lg:flex-row gap-5  p-10 md:p-20" id="live-preview">
 
+        <h2 class="font-bold text-xl lg:text-2xl text-black leading-relaxed rounded p-3">
+            ستارا چگونه کار می‌کند
+        </h2>
+
+        <ol class="relative border-s border-gray-200 dark:border-gray-700">                  
+            <li class="mb-10 ms-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">رزرو جلسه استایلینگ</h3>
+                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+                    <p>
+                        برای رزرو جلسه استایلینگ این فرم را تکمیل کنید یا در
+                            <a href="https://t.me/setara_style" target="_blank" onclick="openInApp(event, 'tg://resolve?domain=setara_style')">
+                            تلگرام</a>
+                            یا
+                            <a href="https://instagram.com/setara_style" target="_blank" onclick="openInApp(event, 'instagram://user?username=setara_style')">
+اینستاگرام</a> پیام بدید.
+                        </p>
+                </p>
+                <a href="https://t.me/setara_style" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">تلکرام <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg></a>
+          <a href="https://instagram.com/setara_style" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">اینستاگرام <svg class="w-3 h-3 ms-2 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 5h12m0 0L9 1m4 4L9 9"/>
+          </svg></a>
+            </li>
+            <li class="mb-10 ms-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                {{-- <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">March 2022</time> --}}
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">ثبت‌نام استایلیست</h3>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400">
+                    اگر به عنوان یک استایلیست حرفه‌ای فعالیت شغلی دارید، با پیوستن به ستارا دنیای مد و استایل را با خلاقیت خود متحول کنید. همین حالا ثبت‌نام کنید و به جمع بهترین‌ها بپیوندید!
+                </p>
+            </li>
+            <li class="ms-4">
+                <div class="absolute w-3 h-3 bg-gray-200 rounded-full mt-1.5 -start-1.5 border border-white dark:border-gray-900 dark:bg-gray-700"></div>
+                {{-- <time class="mb-1 text-sm font-normal leading-none text-gray-400 dark:text-gray-500">April 2022</time> --}}
+                <h3 class="text-lg font-semibold text-gray-900 dark:text-white">تماس با ما
+                </h3>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400">برای هرگونه سوال یا درخواست اطلاعات بیشتر، می‌توانید از طریق ایمیل با ما در ارتباط باشید. تیم ما در سریع‌ترین زمان ممکن پاسخ‌گوی شما خواهد بود.
+
+                </p>
+                <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">info@setara.style
+                    </a>
+
+                    <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">تلگرام
+                    </a>
+
+                    <a href="#" class="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-900 bg-white border border-gray-200 rounded-lg hover:bg-gray-100 hover:text-blue-700 focus:z-10 focus:ring-4 focus:outline-none focus:ring-gray-100 focus:text-blue-700 dark:bg-gray-800 dark:text-gray-400 dark:border-gray-600 dark:hover:text-white dark:hover:bg-gray-700 dark:focus:ring-gray-700">اینستاگرام
+                    
+                    </a>
+            </li>
+        </ol>
+        <!-- End Calendar -->
+        {{-- End of datepicker --}}
+    </div>
+
+
+    <div class="mx-auto flex  sm:items-center py-4 sm:pt-0   bg-sunglow-300 p-10 md:p-20 mt-12 md:mt-0">
         <div class="grid grid-cols-1 lg:grid-cols-3 gap-4">
             @foreach (\App\Models\Stylist::all()->random(3) as $item)
                 <div
@@ -155,9 +213,6 @@
             @endforeach
         </div>
 
-
-        <!-- End Calendar -->
-        {{-- End of datepicker --}}
     </div>
 
 @endsection

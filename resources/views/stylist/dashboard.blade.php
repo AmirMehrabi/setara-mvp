@@ -5,7 +5,8 @@
 
 @section('content')
 
-
+<link rel="stylesheet" href="https://unpkg.com/@majidh1/jalalidatepicker/dist/jalalidatepicker.min.css">
+<script type="text/javascript" src="https://unpkg.com/@majidh1/jalalidatepicker/dist/jalalidatepicker.min.js"></script>
 
     <div class="max-w-4xl flex items-center flex-wrap mx-auto my-32 lg:my-0">
 
@@ -94,11 +95,11 @@
                 <div class="flex flex-wrap  timeslot-selector">
                     <div class="w-1/2">
                         <label for="start_time" class="block text-gray-700">زمان شروع </label>
-                        <input type="datetime-local" name="time_slots[0][start_time]" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" required>
+                        <input data-jdp name="time_slots[0][start_time]" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" required>
                     </div>
                     <div class="w-1/2 mt-0">
                         <label for="end_time" class="block text-gray-700">زمان پایان</label>
-                        <input type="datetime-local" name="time_slots[0][end_time]" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" required>
+                        <input data-jdp name="time_slots[0][end_time]" class="mt-1 block w-full border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500" required>
                     </div>
                 </div>
                 <div class="text-left">
@@ -115,6 +116,16 @@
 
 
     <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    console.log( "ready!" );
+    jalaliDatepicker.startWatch(
+        {time: true}
+    );
+}, false);
+
+
+        
         document.getElementById('add-timeslot').addEventListener('click', function () {
             let timeslotSelector = document.querySelector('.timeslot-selector');
             let index = timeslotSelector.children.length / 2;

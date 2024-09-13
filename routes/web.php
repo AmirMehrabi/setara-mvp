@@ -5,6 +5,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\StylistController;
 use App\Http\Controllers\Auth\StylistAuthController;
+use App\Http\Controllers\StylistCommentController;
 use App\Http\Controllers\StylistDashboardController;
 
 Route::get('/', function () {
@@ -16,6 +17,9 @@ Route::get('about', [PagesController::class, 'about'])->name('about');
 
 Route::get('/stylists/{stylist}', [StylistController::class, 'show'])->name('stylists.show');
 Route::post('/stylists/{stylist}/reserve', [StylistController::class, 'reserve'])->name('stylists.reserve')->middleware('auth');
+
+Route::post('/stylists/{stylist}/comments', [StylistCommentController::class, 'store'])->name('stylists.comments.store');
+Route::delete('/comments/{comment}', [StylistCommentController::class, 'destroy'])->name('comments.destroy');
 
 
 Route::get('/profile', [PagesController::class, 'profile'])->middleware('auth');

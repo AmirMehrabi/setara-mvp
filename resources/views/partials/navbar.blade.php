@@ -18,9 +18,12 @@
             <a href="/logout"
                 class=" bg-black text-white hover:text-gray-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">خروج</a>
         @else
-            <a href="/login"
-                class=" bg-black text-white hover:text-gray-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">ورود / ثبت‌نام</a>
+            {{-- <a href="/login"
+                class=" bg-black text-white hover:text-gray-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">ورود / ثبت‌نام</a> --}}
         @endif
+
+        <a href="/login"
+                class=" bg-black text-white hover:text-gray-200 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0">ثبت نام استایلیست</a>
         {{-- <a href="#live-preview"
             class=" bg-orange-300 text-gray-800 hover:bg-orange-500 focus:ring-4 focus:outline-none focus:ring-orange-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-3 md:mr-0   ">پیش‌نمایش</a> --}}
         <button data-collapse-toggle="navbar-sticky" type="button"

@@ -6,6 +6,7 @@ use App\Models\TimeSlot;
 use App\Models\Reservation;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Morilog\Jalali\Jalalian;
 
 class StylistDashboardController extends Controller
 {
@@ -42,8 +43,8 @@ class StylistDashboardController extends Controller
         // return $request->all();
         $request->validate([
             'time_slots' => 'required|array',
-            'time_slots.*.start_time' => 'required|date_format:Y-m-d\TH:i|after:now',
-        'time_slots.*.end_time' => 'required|date_format:Y-m-d\TH:i|after:time_slots.*.start_time',
+            'time_slots.*.start_time' => 'required',
+        'time_slots.*.end_time' => 'required|after:time_slots.*.start_time',
         ]);
 
         // return $request->all();
@@ -52,10 +53,12 @@ class StylistDashboardController extends Controller
         $stylist = Auth::guard('stylist')->user();
 
         foreach ($request->time_slots as $slot) {
+            // return new Jalalian($slot['start_time']) ;
+            // return \Morilog\Jalali\Jalalian::fromFormat('Y/m/d H:i:s', $slot['start_time'])->toCarbon();
             TimeSlot::create([
                 'stylist_id' => $stylist->id,
-                'start_time' => $slot['start_time'],
-                'end_time' => $slot['end_time'],
+                'start_time' => \Morilog\Jalali\Jalalian::fromFormat('Y/m/d H:i:s', $slot['start_time'])->toCarbon(),
+                'end_time' => \Morilog\Jalali\Jalalian::fromFormat('Y/m/d H:i:s', $slot['end_time'])->toCarbon(),
                 'status' => 'available',
             ]);
         }

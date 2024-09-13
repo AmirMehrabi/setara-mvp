@@ -43,6 +43,12 @@ class StylistController extends Controller
         $availableTimeSlots = TimeSlot::where('stylist_id', $stylist->id)
         ->where('status', 'available')
         ->get();
+
+        // foreach ($stylist->comments as $key => $comment) {
+        //     var_dump($comment);
+        // }
+        // return;
+        // return $stylist->comments;
         return view('modules.stylist.show', compact('stylist', 'availableTimeSlots'));
     }
 
